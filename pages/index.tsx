@@ -224,15 +224,11 @@ const Home = () => {
         <p>Loading...</p>
       ) : (
         <>
-          {contractMetadata?.image && (
-            <Image
-              src={contractMetadata?.image}
-              alt={contractMetadata?.name!}
-              width={200}
-              height={200}
-              style={{ objectFit: "contain" }}
-            />
-          )}
+          <img
+  src="./favicon.png"
+  alt=""
+  style={{ width: 200, height: 200, objectFit: "contain" }}
+/>
 
           <h2 className={styles.title}>Claim Tokens</h2>
           <p className={styles.explain}>
